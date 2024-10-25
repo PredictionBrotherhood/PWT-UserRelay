@@ -1,6 +1,3 @@
-# Re-creating the markdown file after environment reset
-
-# Updated content of the Markdown file for Predict View Application Information
 content = """
 # Predict View Application Information
 
@@ -29,6 +26,9 @@ content = """
   - **Directus**: Headless CMS, containerized with Docker
   - **Frontend**: Wix for user interface and content display
   - **Middleware**: Wix Velo, used for managing secure connections and data interactions between Directus and Wix
+- **Storage**:
+  - **DigitalOcean S3**: Used for all website files and Coolify backups
+  - **Bucket Name**: `predict-suite`
 
 ---
 
@@ -38,3 +38,5 @@ content = """
   - Predict View will expand by deploying multiple Coolify-managed VPS instances across strategic regions.
   - This multi-region setup will enhance performance and reduce latency by placing servers closer to user locations, with each instance managed via Coolify for consistent deployment and monitoring.
   
+- **Monitoring and Optimization**:
+  - As Predict View scales, additional performance monitoring and load balancing will be introduced to maintain seamless service across regions.
