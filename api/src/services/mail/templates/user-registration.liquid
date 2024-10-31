@@ -4,15 +4,15 @@
 
 <p style='padding-bottom: 30px'>
   Thanks for registering at <i>{{ projectName }}</i>.
-  To complete your registration, you need to verify your email address by opening the following verification link.
-  Please feel free to ignore this email if you have not personally initiated the registration.
+  To complete your registration, please verify your email address by clicking the link below.
+  If you did not initiate this registration, please ignore this email.
 </p>
 
 <a
   class='button'
   rel='noopener'
   target='_blank'
-  href="https://predictview.app/signup-auth?token={{ token }}"
+  href="https://predictview.app/signup-auth?token={{ url | split: 'token=' | last }}"
   style='
     font-size: 16px;
     font-weight: 600;
@@ -28,7 +28,7 @@
   <!--[if mso]>
     <i style="letter-spacing: 25px; mso-font-width: -100%; mso-text-raise: 30pt">&nbsp;</i>
   <![endif]-->
-  <span style='mso-text-raise: 15pt'>Verify email</span>
+  <span style='mso-text-raise: 15pt'>Verify Email</span>
   <!--[if mso]>
     <i style="letter-spacing: 25px; mso-font-width: -100%">&nbsp;</i>
   <![endif]-->
